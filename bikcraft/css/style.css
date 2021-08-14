@@ -60,6 +60,25 @@ img{
     margin: 8px auto;
 }
 
+.subtitulo-interno{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: .1em;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.subtitulo-interno::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: rgb(0, 0, 0);
+    margin: 8px 0;
+}
+
 /*Header*/
 
 .header{
@@ -96,6 +115,10 @@ img{
     color: white;
 }
 
+.header_menu ul li a.menu-ativo{
+    color: white;
+}
+
 /*Introdução*/
 
 .introducao{
@@ -114,6 +137,36 @@ img{
     text-transform: uppercase;
     font-weight: bold;
     line-height: 60px;
+    text-align: center;
+}
+
+/*INTRODUÇÃO INTERNA*/
+
+.introducao-interna{
+    width: 100%;
+    margin-top: 92px;
+    height: 160px;
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    
+}
+
+.introducao-interna h1{
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 60px;
+}
+
+
+.introducao-interna h1::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #ffffff;
+    margin: 6px auto;
 }
 
 .quote-externo{
@@ -233,6 +286,7 @@ img{
 
 .qualidade-lista{
     padding-top: 30px;
+    overflow: auto;
 }
 
 .qualidade-lista li{
