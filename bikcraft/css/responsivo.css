@@ -56,6 +56,10 @@
 		border-color: white;
 	}
 
+	.header_menu ul li a.menu-ativo{
+		border-color: white;
+	}
+
 	/*introdução*/
 
 	.introducao{
@@ -69,6 +73,12 @@
 		font-size: 36px;
 	}
 
+	/*introdução interna*/
+
+	.introducao-interna{
+		margin-top: 0;
+	}
+
 	/*call to action*/
 
 	.cta{
@@ -77,6 +87,20 @@
 
 	.qualidade::after{
 		display: none;
+	}
+
+	/*sobre*/
+
+	.missao-sobre p{
+		font-size: 14px;
+		line-height: 20px;
+		padding: 0px;
+	}
+
+	.missao-sobre ul li{
+		font-size: 14px;
+		line-height: 20px;
+		padding: 0px;
 	}
 
 }
