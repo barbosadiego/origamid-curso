@@ -21,6 +21,30 @@
 		width: 26px;
 		height: 26px;
 	}
+
+	/*produtos*/
+
+	.produto-item h2{
+		top: -90px;
+		margin-top: -56px;
+	}
+
+	.produto-icone{
+		padding: 41px 0;
+	}
+
+	.produto-info p{
+		font-size: 14px;
+		line-height: 20px;
+		padding: 20px 30px;
+		height: 122px;
+	}
+
+	.produto-info ul li{
+		width: 181px;
+		height: 48px;
+	}
+	
 }
 
 /*ESTILO PARA CELULARES*/
@@ -102,5 +126,43 @@
 		line-height: 20px;
 		padding: 0px;
 	}
+
+	/*produtos*/
+	
+	.produto-item h2{
+		top: -35px;
+		margin-top: -68px;
+	}
+
+	.produto-icone{
+		padding: 41px 0;
+	}
+
+	.produto-info p{
+		font-size: 14px;
+		line-height: 20px;
+		height: auto;
+		padding: 20px 20px;
+	}
+
+	.produto-info ul li{
+		width: 149px;
+		height: 48px;
+		font-size: 14px;
+		line-height: 20px;
+		padding-top: 16px;
+	}
+
+	/*formulário*/
+
+	.form{
+		padding-right: 0px;
+	}
+
+	.orcamento-dados ul{
+		padding-right: 0px;
+	}
+	
+
 
 }
