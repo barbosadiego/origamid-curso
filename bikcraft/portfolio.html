@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/responsivo.css">
+    <script>document.documentElement.classList.add("js");</script>
     <title>BikCraft - Portfólio</title>
 </head>
 <body>
@@ -32,17 +33,30 @@
         <p>Conheça mais sobre nossos produtos</p>
     </div>
     </section>
-    <section class="container">
+    <section class="container" data-slide="quote">
     <blockquote class="quote-cliente">
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque natus nam veritatis voluptas, quae expedita saepe, numquam debitis, eaque dolorum culpa molestiae quis officia repellendus? Laudantium maiores accusamus totam sapiente.</p>
         <cite>Fulano de Tal</cite>
     </blockquote>
+    <blockquote class="quote-cliente">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptatem veniam repellendus facere ducimus voluptate nostrum ipsa aliquam dolorem eaque a quos ullam! Iusto dignissimos eligendi incidunt, inventore rem earum!</p>
+        <cite>Beltaro de Tal</cite>
+    </blockquote>
+    <blockquote class="quote-cliente">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem necessitatibus aspernatur suscipit assumenda repudiandae nesciunt exercitationem non autem, fugiat repellat vel quod! Recusandae optio saepe nostrum nam perspiciatis alias illo!.</p>
+        <cite>Cicrano de Tal</cite>
+    </blockquote>
     </section>
     <section class="portfolio">
-        <div class="container">
+        <div class="container" data-slide="portfolio">
             <ul class="portfolio-lista">
                 <li class="grid-8"><img src="img/portfolio/retro.jpg" alt="bicicleta retro"></li>
                 <li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="bicicleta passeio"></li>
+                <li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="bicicleta esporte"></li>
+            </ul>
+            <ul class="portfolio-lista">
+                <li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="bicicleta passeio"></li>
+                <li class="grid-8"><img src="img/portfolio/retro.jpg" alt="bicicleta retro"></li>
                 <li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="bicicleta esporte"></li>
             </ul>
         </div>
@@ -84,5 +98,7 @@
           </div>
       </div>
     </footer>
+    <script src="js/simple-slide.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
