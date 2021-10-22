@@ -1,0 +1,175 @@
+/*ESTILO PARA TABLETS*/
+@media only screen and (min-width: 788px) and (max-width: 979px){
+	
+	/*qualidade*/
+	.qualidade::after{
+		right: 66px;
+		z-index: -1;
+	}
+
+	.qualidade-lista li{
+		padding: 0px 10px;
+	}
+
+	/*redes sociais*/
+
+	.footer-redes ul li a{
+		padding: 6px;
+	}
+
+	.footer-redes ul li a img{
+		width: 26px;
+		height: 26px;
+	}
+
+	/*produtos*/
+
+	.produto-item h2{
+		top: -90px;
+		margin-top: -56px;
+	}
+
+	.produto-icone{
+		padding: 41px 0;
+	}
+
+	.produto-info p{
+		font-size: 14px;
+		line-height: 20px;
+		padding: 20px 30px;
+		height: 122px;
+	}
+
+	.produto-info ul li{
+		width: 181px;
+		height: 48px;
+	}
+	
+}
+
+/*ESTILO PARA CELULARES*/
+@media only screen and (max-width: 787px) {
+	
+	/*header*/
+	.header{
+		position: relative;
+		padding-bottom: 0px;
+	}
+
+	.header img{
+		margin: 0 auto 10px auto;
+	}
+
+	.header_menu{
+		text-align: center;
+	}
+
+	.header_menu ul li{
+		margin: 5px;
+	}
+
+	.header_menu ul li a{
+		text-transform: uppercase;
+		border: 4px solid black;
+		width: 130px;
+		display: block;
+		float: left;
+	}
+
+	.header_menu ul li a:hover{
+		border-color: white;
+	}
+
+	.header_menu ul li a.menu-ativo{
+		border-color: white;
+	}
+
+	/*introdução*/
+
+	.introducao{
+		margin-top: 0;
+		padding-top: 40px;
+		background: url(../img/bg-mobile.jpg) no-repeat center;
+		background-size: cover;
+	}
+
+	.introducao h1{
+		font-size: 36px;
+	}
+
+	/*introdução interna*/
+
+	.introducao-interna{
+		margin-top: 0;
+	}
+
+	/*call to action*/
+
+	.cta{
+		padding: 10px;
+	}
+
+	.qualidade::after{
+		display: none;
+	}
+
+	/*sobre*/
+
+	.missao-sobre p{
+		font-size: 14px;
+		line-height: 20px;
+		padding: 0px;
+	}
+
+	.missao-sobre ul li{
+		font-size: 14px;
+		line-height: 20px;
+		padding: 0px;
+	}
+
+	/*produtos*/
+	
+	.produto-item h2{
+		top: -35px;
+		margin-top: -68px;
+	}
+
+	.produto-icone{
+		padding: 41px 0;
+	}
+
+	.produto-info p{
+		font-size: 14px;
+		line-height: 20px;
+		height: auto;
+		padding: 20px 20px;
+	}
+
+	.produto-info ul li{
+		width: 149px;
+		height: 48px;
+		font-size: 14px;
+		line-height: 20px;
+		padding-top: 16px;
+	}
+
+	/*formulário*/
+
+	.form{
+		padding-right: 0px;
+	}
+
+	.orcamento-dados ul{
+		padding-right: 0px;
+	}
+
+	/*contato*/
+
+	.contato-form {
+		padding-right:0;
+		margin-bottom: 40px;
+	}
+	
+
+
+}
