@@ -20,6 +20,10 @@ ul {
   list-style: none;
 }
 
+html.textomaior{
+  font-size: 150%;
+}
+
 body {
   background-color: #faf6eb;
   color: #222;
