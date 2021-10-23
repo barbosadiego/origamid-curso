@@ -106,10 +106,20 @@ imgs2.forEach((item, index) => {
   console.log(item, index);
 });
 
-let i = 0;
+let i = 0; 
 imgs2.forEach(() => {
   console.log(i++);
 });
 
 imgs2.forEach(() => i++);
 console.log(i)
+
+
+//dimensões e distâncias
+
+const listaAnimais = document.querySelector('.animais-lista')
+const tam = listaAnimais.scrollHeight;
+console.log (tam)
+
+const primeiroh2 = document.querySelector('h2')
+const rect = primeiroh2.getBoundingClientRect()
