@@ -51,11 +51,11 @@ initAccordion();
 
 //scroll suave links internos
 
-function initScrollSuave(){
+function initScrollSuave() {
   const linksInternos = document.querySelectorAll('.js-menu a[href^="#"]'); //selecionar todos os links que começam com '#'
 
   function scrollToSection(event) {
-    event.preventDefault();//inpedir o padrão
+    event.preventDefault(); //inpedir o padrão
     const href = event.currentTarget.getAttribute("href");
     const section = document.querySelector(href);
     section.scrollIntoView({
@@ -78,4 +78,25 @@ function initScrollSuave(){
   });
 }
 
-initScrollSuave()
+initScrollSuave();
+
+//animação ao scroll
+function initAnimacaoScroll() {
+  const sections = document.querySelectorAll(".js-scroll");
+
+  if (sections.length) {
+    const windowMetade = window.innerHeight * 0.6;
+    function animaScroll() {
+      sections.forEach((section) => {
+        const sectionTop = section.getBoundingClientRect().top - windowMetade;
+        if (sectionTop < 0) {
+          section.classList.add("ativo");
+        }
+      });
+    }
+    animaScroll();
+    window.addEventListener("scroll", animaScroll);
+  }
+}
+
+initAnimacaoScroll();
