@@ -103,10 +103,9 @@ links2.forEach((link) => {
 // ao clique mostre exatamente quais elementos estão sendo clicados
 const todosElementos = document.querySelectorAll("body *");
 
-function handleElemento(event){
-  console.log(event.currentTarget)
+function handleElemento(event) {
+  console.log(event.currentTarget);
 }
-
 
 //function handleElemento(event) {
 //  event.currentTarget.remove();
@@ -122,8 +121,30 @@ todosElementos.forEach((elemento) => {
 
 function handleClickT(event) {
   console.log(event.key);
-  if(event.key === 't')
-    document.documentElement.classList.toggle('textomaior')//documentElement seleciona o HTML
+  if (event.key === "t")
+    document.documentElement.classList.toggle("textomaior"); //documentElement seleciona o HTML
 }
 
-window.addEventListener('keydown', handleClickT)
+window.addEventListener("keydown", handleClickT);
+
+const lista = document.querySelector("animais-lista");
+const contato = document.querySelector("#contato");
+const titulo = contato.querySelector(".titulo");
+const animais = document.querySelector(".animais");
+
+animais.appendChild(titulo); //manipula o h1 'contato' para dentro da seção 'animais'
+
+// Duplique o menu e adicione ele em copy
+const menu = document.querySelector(".menu");
+const copy = document.querySelector(".copy");
+const cloneMenu = menu.cloneNode(true);
+copy.appendChild(cloneMenu);
+// Selecione o primeiro DT da dl de Faq
+const faq = document.querySelector(".faq-lista");
+const primeiroDt = faq.querySelector("dt");
+// Selecione o DD referente ao primeiro DT
+const proximoDD = primeiroDt.nextElementSibling;
+console.log(proximoDD);
+// Substitua o conteúdo html de .faq pelo de .animais
+const animaiss = document.querySelector('.animais')
+faq.innerHTML = animaiss.innerHTML
