@@ -12,19 +12,19 @@
 // };
 
 
-function Dom(seletor){
-  this.seletor = seletor;
-  this.element = function(){
-    return document.querySelector(this.seletor)
-  }
-  this.ativar = function(){
-    this.element().classList.add('ativar')
-  }
-}
+// function Dom(seletor){
+//   this.seletor = seletor;
+//   this.element = function(){
+//     return document.querySelector(this.seletor)
+//   }
+//   this.ativar = function(){
+//     this.element().classList.add('ativar')
+//   }
+// }
 
-const li = new Dom('li')
-const ul = new Dom('ul')
-const lastLi = new Dom ('li:last-child')
+// const li = new Dom('li')
+// const ul = new Dom('ul')
+// const lastLi = new Dom ('li:last-child')
 
 
 //exercícios ----------------------------------------
@@ -39,8 +39,33 @@ const pessoa = {
   }
 }
 
+function NovaPessoa (nome, idade){
+  this.nome = nome,
+  this.idade = idade,
+  this.andar = function(){
+    console.log(this.nome + ' andou')
+  }
+}
+
+const diego = new NovaPessoa('diego', 35)
+console.log(diego)
+
+
+
+
 // Crie 3 pessoas, João - 20 anos,
 // Maria - 25 anos, Bruno - 15 anos
+
+function Pessoa (nome, idade){
+  this.nome = nome,
+  this.idade = idade
+}
+
+const joao = new Pessoa('João', '20 anos')
+const maria = new Pessoa('Maria', '25 anos')
+const bruno = new Pessoa('Bruno', '15 anos')
+
+console.log(joao, maria, bruno)
 
 
 // Crie uma Constructor Function (Dom) para manipulação
@@ -51,3 +76,28 @@ const pessoa = {
 // addClass(classe), adiciona a classe a todos os elementos
 // removeClass(classe), remove a classe a todos os elementos
 
+
+function Dom (element){
+  this.elements = document.querySelectorAll(element)
+  this.ativar = function(){
+    this.elements.forEach ((element)=>{
+      element.classList.add('ativo')
+    })
+  }
+  this.remover = function(){
+    this.elements.forEach((element)=>{
+      element.classList.remove('ativo')
+    })
+  }
+}
+
+const li = new Dom('li')
+
+
+
+// const li2 = document.querySelectorAll('li')
+// function ativar (){
+//   li2.forEach((item)=>{
+//     item.classList.toggle('ativo')
+//   })
+// }
