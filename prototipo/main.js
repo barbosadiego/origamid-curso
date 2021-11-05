@@ -84,27 +84,33 @@ console.log (diego.nomeCompleto())
 // dados criados com NodeList,
 // HTMLCollection, Document
 
-console.log(Object.getOwnPropertyNames(NodeList))
-console.log(Object.getOwnPropertyNames(HTMLCollection))
-console.log(Object.getOwnPropertyNames(Document))
+console.log(Object.getOwnPropertyNames(NodeList.prototype))
+console.log(Object.getOwnPropertyNames(HTMLCollection.prototype))
+console.log(Object.getOwnPropertyNames(Document.prototype))
+
+//outra forma de listar
+console.log(NodeList.prototype)
+console.log(HTMLCollection.prototype)
+console.log(Document.prototype)
 
 // Liste os construtores dos dados abaixo
 const li = document.querySelector("li");
 
-li;
+li;//HTMLLIElement
 console.log(li.constructor.name)
-li.click;
+li.click;//Function
 console.log(li.click.constructor.name)
-li.innerText;
+li.innerText;//String
 console.log(li.innerText.constructor.name)
-li.value;
+li.value;//Number
 console.log(li.value.constructor.name)
-li.hidden;
+li.hidden;//Boolean
 console.log(li.hidden.constructor.name)
-li.offsetLeft;
+li.offsetLeft;//Number
 console.log(li.offsetLeft.constructor.name)
-li.click();
-console.log(li.click.constructor.name)
+li.click();//undefined
+// console.log(li.click().constructor.name)
 
 // Qual o construtor do dado abaixo:
-console.log(li.hidden.constructor.name)
+const teste = li.hidden.constructor.name//String
+console.log(teste.constructor.name)
