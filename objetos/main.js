@@ -27,7 +27,13 @@ console.log(window)
 // Liste 2 Métodos, Propriedades ou Objetos
 // presentes no Chrome que não existem no Firefox
 
-if (typeof window.onafterprint !== "undefined"){
+if (typeof document.webkitHidden !== "undefined"){
+  console.log('existe')
+} else {
+  console.log('não existe')
+}
+
+if (typeof document.webkitVisibilityState !== "undefined"){
   console.log('existe')
 } else {
   console.log('não existe')
