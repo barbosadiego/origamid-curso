@@ -58,3 +58,42 @@ console.log(carros2.shift())//retorna o primeiro item e o remove da array
 console.log(carros2)
 carros2.reverse()//inverte a ordem da array
 console.log(carros2)
+
+//splice
+console.log(carros2)
+console.log(carros2.splice(2,0,'fusca'))// o retorno aqui são dos itens removidos, então a array gerada é vazia. para ver o novos valores no array, dar 'console.log'
+console.log(carros2)
+console.log(carros2.splice(2,1,'mercedez'))// o retorno aqui é 'fusca', pois foi removido
+console.log(carros2)
+
+//copyWithin
+console.log(['item 1', 'item 2', 'item 3', 'item 4', 'item 5'].copyWithin(2,0,3))
+
+//fill - preenche a array com o valor passado
+console.log(['item 1', 'item 2', 'item 3', 'item 4', 'item 5'].fill('banana', 2))
+
+//métodos de acesso (não modificam a array)
+
+const transporte1 = ['barco', 'avião']
+const transporte2 = ['carro', 'moto']
+const transportes = transporte1.concat(transporte2, 'outro valor', 234, 'oi')
+console.log(transportes)
+
+const linguagens = ['html', 'css', 'js', 'php', 'python', 'js']
+
+console.log(linguagens.includes('css'))
+console.log(linguagens.includes('ruby'))
+console.log(linguagens.indexOf('python'))
+console.log(linguagens.indexOf('js'))
+console.log(linguagens.lastIndexOf('js'))
+console.log(linguagens.join())
+console.log(linguagens.join(' '))
+console.log(linguagens.join('-_-'))
+
+let htmlString = '<h2>Título Principal</h2>'
+htmlString = htmlString.split('h2')
+htmlString = htmlString.join('h1')
+console.log(htmlString)
+
+console.log(linguagens.slice(2,4))
+const cloneLinguagem = linguagens.slice()//slice sem parâmetro também serve para clonar arrays
